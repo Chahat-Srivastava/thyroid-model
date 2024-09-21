@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import sklearn
 model_data = pickle.load(open('thyroid_model.pkl', 'rb'))
 model = model_data['model']
 scaler = pickle.load(open('scaler.pkl', 'rb'))
